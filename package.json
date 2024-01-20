@@ -6,13 +6,19 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@cap-js-community/odata-v2-adapter": "^1.12.2",
     "@sap/cds": "^7",
     "express": "^4"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1"
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.120.1"
   },
   "scripts": {
-    "start": "cds-serve"
-  }
+    "start": "cds-serve",
+    "watch-btp_ui_emloyee": "cds watch --open btp_ui_emloyee/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/btp_ui_emloyee"
+  ]
 }
