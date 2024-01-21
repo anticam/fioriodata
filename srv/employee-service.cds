@@ -24,3 +24,28 @@ service EmployeeService {
 
     annotate Department with @odata.draft.enabled;
 }
+
+// annotate EmployeeService.Employees with @(UI: {
+//     // Filter Bar
+//     SelectionFields: [DEPARTMENT_ID],
+
+//     // Table Column
+//     LineItem       : [
+//         {
+//             $Type: 'UI.DataField',
+//             Value: NAME,
+//         },
+//         {
+//             $Type: 'UI.DataField',
+//             Value: EMAIL_ID,
+//         },
+//         {
+//             $Type: 'UI.DataField',
+//             Value: DEPARTMENT_ID,
+//         },
+//     ],
+// }) {
+//     NAME       @title: 'Name';
+//     EMAIL_ID   @title: 'Email ID';
+//     DEPARTMENT @title: 'Department';
+// }

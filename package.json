@@ -20,5 +20,16 @@
   },
   "sapux": [
     "app/btp_ui_emloyee"
-  ]
+  ],
+
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "url": "db.sqlite"
+        }
+      }
+    }
+  }
 }
