@@ -8,6 +8,7 @@ using {
 entity EMPLOYEE_REGISTRY:  cuid, managed {
     NAME       : String(255);
     EMAIL_ID   : String(255);
+    RATE: Decimal(2);
     DEPARTMENT : Association to one DEPARTMENT;
 
 }

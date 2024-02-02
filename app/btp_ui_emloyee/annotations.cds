@@ -18,6 +18,15 @@ annotate service.Employees with @(
             Value: EMAIL_ID,
         },
         {
+            $Type: 'UI.DataFieldForAnnotation',
+            Label: 'Rate',
+            Value: RATE,
+
+        
+
+        }
+        ,
+        {
             $Type: 'UI.DataField',
             Label: 'Department1',
             Value: DEPARTMENT_ID,
@@ -63,6 +72,12 @@ annotate service.Employees with @(
             {
                 $Type: 'UI.DataField',
                 Value: DEPARTMENT_ID,
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: RATE,
+
+
             },
         ]
     },
